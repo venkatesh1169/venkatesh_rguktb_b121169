@@ -55,7 +55,7 @@ public class StudentGroup implements StudentArrayOperation {
 	}
 
 	@Override
-	public void addFirst(Student student) {
+	public void addFirst(Student student) throws IllegalArgumentException{
 		// Add your implementation here
 		if(student==null)
 		    throw new IllegalArgumentException();
@@ -81,7 +81,7 @@ public class StudentGroup implements StudentArrayOperation {
 	}
 
 	@Override
-	public void add(Student student, int index){
+	public void add(Student student, int index)throws IllegalArgumentException{
 		// Add your implementation here
 		if(student==null)
 		    throw new IllegalArgumentException();
