@@ -48,7 +48,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void setStudent(Student student, int index)throws IllegalArgumentException {
 		// Add your implementation here
-		student[index]=student;
+		this.students[index]=student;
 		if(index<0||index>=students.length)
 		     throw new IllegalArgumentException();
 	}
