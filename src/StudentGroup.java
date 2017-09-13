@@ -33,7 +33,7 @@ public class StudentGroup implements StudentArrayOperation {
 	public void setStudents(Student[] students) throws IllegalArgumentException{
 		// Add your implementation here
 		if(students==null)
-		    throw new IllegalArgumentException()
+		    throw new IllegalArgumentException();
 		 this.students=students;
 	}
 
@@ -41,7 +41,7 @@ public class StudentGroup implements StudentArrayOperation {
 	public Student getStudent(int index) throws IllegalArgumentException{
 		// Add your implementation here
 		if(index<0||index>=students.length)
-		     throw new IllegalArgumentException()
+		     throw new IllegalArgumentException();
 		 return students[index];
 	}
 
