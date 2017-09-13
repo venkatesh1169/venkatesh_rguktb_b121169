@@ -61,7 +61,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addLast(Student student)throws IllegalArgumentException{ {
 		// Add your implementation here
-		students.add(student);
+		students.remove(students.size()-1);
 		if(index<0||index>=students.length)
 		     throw new IllegalArgumentException();
 	}
