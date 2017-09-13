@@ -64,8 +64,11 @@ public class StudentGroup implements StudentArrayOperation {
 	}
 
 	@Override
-	public void add(Student student, int index) {
+	public void add(Student student, int index) throws IllegalArgumentException{
 		// Add your implementation here
+		students[index].add(student);
+		if(index<0||index>=students.length)
+		     throw new IllegalArgumentException();
 	}
 
 	@Override
