@@ -51,6 +51,7 @@ public class StudentGroup implements StudentArrayOperation {
 		this.students[index]=student;
 		if(index<0||index>=students.length)
 		     throw new IllegalArgumentException();
+		     
 	}
 
 	@Override
@@ -66,8 +67,8 @@ public class StudentGroup implements StudentArrayOperation {
 		    for(int i=0;i<size;i++)
 		        a[i]=students[i];
 		   a[size]=student;
-		if(index<0||index>=a.length)
-		     throw new IllegalArgumentException();
+		if(students==null)
+		    throw new IllegalArgumentException();
 	}
 
 	@Override
